@@ -6,8 +6,12 @@ def join_nested_strings(src)
   while row < src.length do
     column = 0 
     while column < src[row].length do
-      if src[row]
+      if src[row][column].is_a? String
+        returned_string += src[row][column]
+        column += 1 
       column += 1
     end
+    row += 1 
   end
+  returned_string
 end
