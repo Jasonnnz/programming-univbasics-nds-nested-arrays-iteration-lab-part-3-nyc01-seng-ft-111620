@@ -4,6 +4,10 @@ def join_nested_strings(src)
   returned_string = ''
   row = 0 
   while row < src.length do
-    column
+    column = 0 
+    while column < src[row].length do
+      if src[row]
+      column += 1
+    end
   end
 end
