@@ -9,6 +9,7 @@ def join_nested_strings(src)
       if src[row][column].is_a? String
         returned_string += src[row][column]
         column += 1 
+      end
       column += 1
     end
     row += 1 
