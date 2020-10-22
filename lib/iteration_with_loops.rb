@@ -7,7 +7,7 @@ def join_nested_strings(src)
     column = 0 
     while column < src[row].length do
       if src[row][column].is_a? String
-        returned_string += src[row][column]
+        returned_string += (src[row][column] +' ')
         column += 1 
       end
       column += 1
